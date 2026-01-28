@@ -6,7 +6,7 @@
 /*   By: zatalbi <zatalbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 17:28:08 by zatalbi           #+#    #+#             */
-/*   Updated: 2024/12/18 18:58:28 by zatalbi          ###   ########.fr       */
+/*   Updated: 2026/01/28 14:08:50 by zatalbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ size_t	ft_strlcpy_gnl(char *dst, const char *src, size_t dstsize, int endl)
 	size_t	srclen;
 
 	srclen = ft_strlen_gnl(src, endl);
-	if (dstsize == 0)
+	if (!dstsize)
 		return (srclen);
 	v = 0;
 	while (v < dstsize - 1 && src[v])
@@ -53,7 +53,7 @@ size_t	ft_strlcat_gnl(char *dst, const char *src, size_t dstsize, int endl)
 	size_t	size;
 
 	srclen = ft_strlen_gnl(src, endl);
-	if (dstsize == 0)
+	if (!dstsize)
 		return (srclen);
 	dstlen = ft_strlen_gnl(dst, endl);
 	size = dstsize - dstlen;

@@ -6,7 +6,7 @@
 /*   By: zatalbi <zatalbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 16:36:03 by zatalbi           #+#    #+#             */
-/*   Updated: 2024/12/19 14:07:34 by zatalbi          ###   ########.fr       */
+/*   Updated: 2026/01/28 13:39:31 by zatalbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,13 @@ static char	*ft_strchr(const char *s, int c)
 	size_t	v;
 
 	v = 0;
-	while (s[v] != '\0')
+	while (s[v])
 	{
 		if (s[v] == (char)c)
 			return ((char *)(s + v));
 		v++;
 	}
-	if ((char)c == '\0')
+	if (!(char)c)
 		return ((char *)(s + v));
 	return (NULL);
 }
