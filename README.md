@@ -89,7 +89,7 @@ make bonus	# For bonus
 cc your_file.c -L. -lftgnl -Iinclude -Ibonus/include -o your_program
 ```
 
-### Example usage:
+Example usage:
 
 ```c
 #include "get_next_line.h"
