@@ -1,10 +1,12 @@
 # get_next_line
 
-A C function that reads a line from a file descriptor, part of the 42 school curriculum.
+A C function that reads a line from a file descriptor, part of the 42 school cursus.
 
 ## Description
 
 `get_next_line` is a function that returns a line read from a file descriptor. This project teaches important concepts about static variables, memory allocation, and file manipulation in C.
+
+---
 
 ## Mandatory Features
 
@@ -16,6 +18,8 @@ The mandatory part requires implementing a function that:
 - Handles reading from files and standard input
 - Uses only one static variable
 - Must be memory leak-free
+
+---
 
 ## Bonus Features
 
@@ -30,11 +34,15 @@ line2 = get_next_line(fd2);
 line3 = get_next_line(fd1); // Continues from where fd1 left off
 ```
 
+---
+
 ## Function Prototype
 
 ```c
 char	*get_next_line(int fd);
 ```
+
+---
 
 ## Compilation
 
@@ -53,6 +61,8 @@ You can also specify the buffer size:
 ```bash
 cc -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c
 ```
+
+---
 
 ## Usage
 
@@ -101,6 +111,8 @@ int	main(void)
 }
 ```
 
+---
+
 ## Project Structure
 
 - **Makefile** - Build configuration
@@ -109,11 +121,15 @@ int	main(void)
 - **bonus/** - Bonus implementation
 - **en.subject.pdf** - Project subject
 
+---
+
 ## Author
 
 **Zakaria Talbi**
 - GitHub: [@zakariatalbii](https://github.com/zakariatalbii)
 
+---
+
 ## License
 
-This project is part of the 42 School curriculum.
+This project is part of the 42 School cursus.
